@@ -1,0 +1,19 @@
+/*
+	fast.fonts.net
+*/
+@import url('http://fast.fonts.net/t/1.css?apiType=css&projectid=4841bf36-4fd8-4b5b-a707-903149818f15');
+
+
+   @font-face{
+        font-family:"Angro LT W01";
+        font-family: 300;
+        src:url("../fonts/cce09670-a7e1-4cbb-a35e-66bc9696fde1.eot?#iefix");
+        src:url("../fonts/cce09670-a7e1-4cbb-a35e-66bc9696fde1.eot?#iefix") format("eot"),url("../fonts/68558e6d-9e60-4c9e-bb70-f7b14cffe8b0.woff2") format("woff2"),url("../fonts/8b96f005-e9d3-4a7c-982f-ce8fe806a256.woff") format("woff"),url("../fonts/82e7aacd-3538-4017-a3ac-a2ac27a2d36e.ttf") format("truetype"),url("../fonts/886f8e07-80a5-4b24-873a-3d2a32aa72b3.svg#886f8e07-80a5-4b24-873a-3d2a32aa72b3") format("svg");
+    }
+    
+    @font-face{
+        font-family:"Angro LT W01";
+        font-weight: 700;
+        src:url("../fonts/7632fb69-7add-4f21-9fea-2b1414a6b731.eot?#iefix");
+        src:url("../fonts/7632fb69-7add-4f21-9fea-2b1414a6b731.eot?#iefix") format("eot"),url("../fonts/c788932a-5ece-42bc-b863-917e7467bd17.woff2") format("woff2"),url("../fonts/aab5399f-ab52-45eb-b792-31409a41e194.woff") format("woff"),url("../fonts/9d09f4c4-7e86-40e7-93d9-b7e7047871e1.ttf") format("truetype"),url("../fonts/f3bc8182-9326-436b-a00b-9978f13e4e60.svg#f3bc8182-9326-436b-a00b-9978f13e4e60") format("svg");
+    }

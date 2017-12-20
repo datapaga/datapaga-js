@@ -1,0 +1,32 @@
+
+/**
+* Media query style
+*/
+@media only screen and (max-width: 767px) {
+
+  section.content-landing {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  section.content-landing .col-description {
+  	font-size: 18px;
+  }
+  section.content-landing .col-operator {
+  	font-size: 12px;
+  }
+  section.content-landing .col-description p {
+	line-height: 20px;
+  }
+  section.content-landing .col-mail {
+    font-size: 18px;
+  }
+  section.content-landing img {
+    width: 100%;
+  }
+
+
+  
+}
+/**
+* End Media query style
+*/

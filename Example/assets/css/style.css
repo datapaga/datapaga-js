@@ -1,0 +1,89 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/**
+* Body Style 
+*/
+body {
+	background-color: #012442 !important;
+	background-image: url('../img/BG_pattern.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/**
+* Section content-landing style
+*/
+section.content-landing {	
+	text-align: center;	
+	/*padding-top: 265px;*/
+	color: #fff;
+	min-height: 100%; 
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+}
+section.content-landing img {
+	max-width: 600px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+section.content-landing .col-description {
+	font-family: 'Angro LT W01';
+	font-size: 25px;
+	font-weight: 300;
+	padding-top: 20px;
+}
+section.content-landing .col-description p {
+	line-height: 25px;
+}
+section.content-landing .col-operator {
+	font-family: 'Angro LT W01';
+	font-size: 15px;
+	font-weight: 300;
+	padding-bottom: 15px;
+	padding-top: 25px;
+	text-transform: uppercase;
+}
+section.content-landing .col-operator a {
+	color: #fff;
+	text-decoration: none;
+}
+section.content-landing .col-operator a:hover {
+	color: #ffbe4a;
+	text-decoration: none;
+}
+section.content-landing .col-mail {
+	font-family: 'Angro LT W01';
+	font-size: 25px;
+	font-weight: 700;
+	padding-top: 20px;
+}
+section.content-landing .col-mail a {
+	color: #fff;
+	text-decoration: none;
+}
+section.content-landing .col-mail a:hover {
+	color: #ffbe4a;
+	text-decoration: none;
+}
+ /**
+ * End style.css
+ */

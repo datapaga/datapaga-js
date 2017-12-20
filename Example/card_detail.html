@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Api</title>
+    <!--Meta Data-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="" />
+    <meta name="author" content="">
+    <meta name="theme-color" content="#012442">
+    <!-- Favicons -->
+    <!--<link rel="icon" type="image/png" href="assets/img/1.png"/>
+	<link rel="icon" sizes="192x192"  href="assets/img/1.png">-->
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">
+    <!-- Style -->
+    <style>
+    body{
+    	font-family: 'Open Sans';
+    }
+    table tr td{
+    	padding: 10px;
+    }
+    </style>
+    <!-- JavaScripts -->
+    <script src="assets/js/jquery-3.2.1.min.js" type="text/javascript"></script> 
+    <script src="assets/js/js.js" type="text/javascript"></script>     
+    <script src="assets/js/bootstrap.bundle.min.js" type="text/javascript"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.15.3/axios.min.js" type="text/javascript"></script>
+    <script src="assets/js/datapagalib.js" type="text/javascript"></script>
+</head>
+
+<body class="align-middle">
+<script>  
+
+
+     document.addEventListener('DOMContentLoaded', function () {
+        var url = document.url;
+        var uuid_card = getQueryVariable("card_uuid")
+        var datas = {
+            "card": {            
+            "api_secret": "eEm5ERkCIT+cQvwLfbLfRDw8P8XREzpxCyvKXueCWX4="}
+        }
+        var valuedata;
+        var uuid_card;
+
+        datapagalib._get_card_detail(JSON.stringify(datas),uuid_card).then((result)=>{
+
+            var object = JSON.parse(result)
+            console.log(object)
+
+
+       
+            var content = $('#transaction_response');
+            var data_content = "";
+            data_content += '<p style="text-align: justify;font-size: 12px;">'+  JSON.stringify(object) + '</p>';
+            content.append(data_content);
+
+            var table_content = $('#list_trasaction table tbody');
+            var table_body = "";
+                  
+                table_body += '<tr>';   
+                    table_body += '<td>'+ object.uuid              +'</td>';          
+                    table_body += '<td>'+ object.balance           +'</td>';  
+                    table_body += '<td><a class="btn btn-info" href="../../dev/appdatapaga/card_list.html"> volver </a></td>'; 
+                table_body += '</tr>';     
+            table_content.append(table_body);
+
+        });
+    });
+</script>
+<section>   
+    <div class="container"> 
+        <div class="row">   
+            <div class="col-lg-12"> 
+                <header>
+                    <ul class="nav justify-content-end">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="../../dev/appdatapaga/index.html">Transactión history</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../../dev/appdatapaga/account_movement.html">Account movement</a>
+                      </li>     
+                      <li class="nav-item">
+                        <a class="nav-link" href="../../dev/appdatapaga/card_list.html">Card list</a>
+                      </li> 
+                      <li class="nav-item">
+                        <a class="nav-link" href="../../dev/appdatapaga/balance.html">Balance</a>
+                      </li>
+                    </ul>
+                </header>
+            </div>
+        </div>
+    </div>   
+</section>
+<section>
+	<div class="container">
+        <div class="row">   
+            <div class="col-lg-12"> 
+                </br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card text-center">
+                  <div class="card-header">
+                    <ul class="nav nav-tabs card-header-tabs">
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                      </li>                   
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Transaction_history Response :</h4>
+                    <div id="transaction_response">        
+                    </div>
+                  </div>
+                </div>                              
+            </div>
+        </div>
+        <div class="row">   
+            <div class="col-lg-12"> 
+                </br>
+            </div>
+        </div>
+		<div class="row">
+			<div class="col-lg-12">
+				<div id="list_trasaction" class="table-responsive">
+			        <table class="table">
+			            <thead>
+			                <th> UUID         </th>
+			                <th> Balance      </th>			    
+			                <th>              </th>
+			            </thead>
+			            <tbody>
+			            </tbody>
+			        </table>
+			    </div>
+			</div>
+		</div>        
+	</div>
+</section>
+    <!--section-->
+    <!--End section-->
+</body>
+
+</html>
