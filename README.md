@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="460" src="https://github.com/elaniin/datapaga-js/blob/master/Example/assets/img/logo.png">
+  <img width="460" src="https://github.com/datapaga/datapaga-js/blob/master/Example/assets/img/logo.png">
 
   </hr>
 </p>
@@ -27,7 +27,7 @@ assets\js\datapagalib.min.js
 
 * [Example Datapaga API](https://toolboxsv.com/dev/appdatapaga/).
 
-* [See example on Github](https://github.com/elaniin/datapaga-js/tree/master/Example).
+* [See example on Github](https://github.com/datapaga/datapaga-js/tree/master/Example).
 
 ## Version
 
