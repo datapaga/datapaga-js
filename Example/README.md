@@ -12,14 +12,6 @@
 A Javascript library for the DataPaga API
 
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-jQuery
-```
-
 ### Installing
 
 add the file to the directory of your project, example:
