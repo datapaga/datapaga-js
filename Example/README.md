@@ -24,9 +24,7 @@ assets\js\datapagalib.min.js
 
 ### Example of Library 
 
-* [Example Datapaga API](https://toolboxsv.com/dev/appdatapaga/).
-
-## How to use.
+* [ Library Implementation](https://toolboxsv.com/dev/appdatapaga/).
 
 ### Get list transaction.
 
@@ -111,7 +109,7 @@ assets\js\datapagalib.min.js
 
 ```
 
-### Account movement.
+### Charges.
 
 </hr>
 
