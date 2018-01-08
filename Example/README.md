@@ -26,6 +26,28 @@ assets\js\datapagalib.min.js
 
 * [ Library Implementation](https://toolboxsv.com/dev/appdatapaga/).
 
+## Libreria de JS de DataPaga
+ 
+ Una librería de JS para usar el API de DataPaga
+ 
+ 
+### Instalación
+ 
+ Agrega uno de los siguientes archivos de  la librería en el directorio de tu proyecto
+ ```
+ assets\js\datapagalib.js
+ ```
+ o
+ ```
+ assets\js\datapagalib.min.js
+ ```
+ 
+### Example of Library 
+ 
+ * [Ejemplo de emplementación ](https://toolboxsv.com/dev/appdatapaga/).
+ 
+## How to use/Como usar
+
 ### Get list transaction.
 
 </hr>
