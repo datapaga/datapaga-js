@@ -39,3 +39,35 @@ DataPaga Library v0.1.
 
 See also the list of [contributors](https://github.com/elaniin/datapaga-js/contributors) who participated in this project.
 
+# DataPaga JS
+
+Librería de DataPaga para JS
+
+
+### Instalación
+
+agrega uno de los siguientes archivos al directorio de tu proyecto:
+
+```
+assets\js\datapagalib.js
+```
+o
+```
+assets\js\datapagalib.min.js
+```
+
+### Implementación
+
+* [Ejemplo](https://toolboxsv.com/dev/appdatapaga/).
+
+* [Código del ejemplo](https://github.com/datapaga/datapaga-js/tree/master/Example).
+
+## Versión
+
+DataPaga Library v0.1. 
+
+## Author
+
+* **DataPaga** 
+
+Lista de [contribuyentes](https://github.com/elaniin/datapaga-js/contributors).
