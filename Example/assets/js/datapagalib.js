@@ -11,7 +11,7 @@
 const url = "https://datapaga.herokuapp.com/v1";
 const url_stagin = "https://datapaga-staging.herokuapp.com/v1";
 var Glob_balance = '';
-   var ajaxresponse = 'befor';
+var ajaxresponse = 'befor';
 /**
  * [Secret description]
  * @type {String}
@@ -117,6 +117,7 @@ function _result(values,modul,uuid_card,page) {
     req.onload = function() {
       // This is called even on 404 etc
       // so check the status
+      
       if (req.status == 200) {
         // Resolve the promise with the response text
         resolve(req.response);
@@ -124,7 +125,8 @@ function _result(values,modul,uuid_card,page) {
       else {
         // Otherwise reject with the status text
         // which will hopefully be a meaningful error
-        reject(Error(req.statusText));
+        //reject(Error(req.statusText));
+        resolve(req.response);
       }
     };
 

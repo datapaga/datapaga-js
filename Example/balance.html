@@ -16,9 +16,7 @@
 	<link rel="icon" sizes="192x192"  href="assets/img/1.png">-->
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-theme.min.css">
-    <script src="assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css">
     <!-- Style -->
     <style>
     body{
@@ -29,7 +27,6 @@
     }
     </style>
     <!-- JavaScripts -->
-   <script src="assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
     <script src="assets/js/js.js" type="text/javascript"></script>        
     <script src="assets/js/datapagalib.js" type="text/javascript"></script>
 </head>
@@ -47,15 +44,19 @@
 
             var object = JSON.parse(result)
             console.log(object)
-            var content = document.querySelector('#balance_response p');
-            var data_content = "";
-            data_content +=  JSON.stringify(object) ;
-            content.append(data_content);
+            var str = JSON.stringify(object, undefined, 4);  
+            var content = document.querySelector('#balance_response pre');
 
-            var table_content = $('#balance table tbody');
-            var table_body = '<tr><td>' + object.response.balance +'</td> </tr>';  
+            var data_content = "";
+            data_content +=  JSON.stringify(object);
+            content.append(str);
+            var xTable=document.getElementById('tbodyrows');
             
-            table_content.append(table_body);
+            var table_body = '<tr><td>' + object.response.balance +'</td> </tr>';  
+            var tr=document.createElement('tr'); 
+            tr.innerHTML =table_body;
+            xTable.appendChild(tr);
+            table_body ="";
         })
 
   
@@ -63,28 +64,25 @@
     })
 </script>
 <section>   
-    <div class="container"> 
-        <div class="row">   
-            <div class="col-lg-12"> 
-                <header>
-                    <ul class="nav justify-content-end">
-                      <li class="nav-item">
-                        <a class="nav-link active" href="../../dev/appdatapaga/index.html">Transactión history</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="../../dev/appdatapaga/charges.html">Charges</a>
-                      </li>     
-                      <li class="nav-item">
-                        <a class="nav-link" href="../../dev/appdatapaga/card_list.html">Card list</a>
-                      </li> 
-                      <li class="nav-item">
-                        <a class="nav-link" href="../../dev/appdatapaga/balance.html">Balance</a>
-                      </li> 
-                    </ul>
-                </header>
-            </div>
-        </div>
-    </div>   
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo"></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Transactión history</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="account_movement.html">Account movement</a>
+          </li>     
+          <li class="nav-item">
+            <a class="nav-link" href="card_list.html">Card list</a>
+          </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="balance.html">Balance</a>
+          </li>
+      </ul>
+    </div>
+</nav>    
 </section>
 <section>
 	<div class="container">
@@ -95,24 +93,17 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <div class="card text-center">
-                  <div class="card-header">
-                    <ul class="nav nav-tabs card-header-tabs">
-                      <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
-                      </li>                   
-                    </ul>
-                  </div>
-                  <div class="card-body">
+                  <div class="card-panel">
                     <h4 class="card-title">Balance Response :</h4>
-                    <div id="balance_response"> 
-                    <p style="text-align: justify;font-size: 12px;">
-                    </p>       
+                    <div id="balance_response">  
+                    <pre>
+
+                    </pre>      
                     </div>
-                  </div>
-                </div>                              
+                  </div>                                       
             </div>
         </div>
+      
         <div class="row">   
             <div class="col-lg-12"> 
                 </br>
@@ -121,11 +112,11 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div id="balance" class="table-responsive">
-			        <table class="table">
+			        <table id="xtable" class="table responsive-table striped">
 			            <thead>
 			                <th> Balance      </th>	
 			            </thead>
-			            <tbody>
+			            <tbody id="tbodyrows">
 			            </tbody>
 			        </table>
 			    </div>
