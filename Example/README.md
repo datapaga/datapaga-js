@@ -168,7 +168,7 @@ assets\js\datapagalib.min.js
 #### Function. 
 
 ```
-	datapagalib._get_account_movements(JSON.stringify(datas)).then((result)=>{ 
+	datapagalib._get_charges(JSON.stringify(datas)).then((result)=>{ 
 			// get result here
 	});
 
