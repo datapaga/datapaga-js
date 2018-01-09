@@ -27,7 +27,7 @@ or
 assets\js\datapagalib.min.js
 ```
 ### Docs
-	[Here](http://apidocs.datapaga.com/?shell#introduction)
+[Here](http://apidocs.datapaga.com/?shell#introduction)
 
 ### Integration
 
@@ -61,8 +61,9 @@ o
 ```
 assets\js\datapagalib.min.js
 ```
+
 ### Documentación
-	[Aquí](http://apidocs.datapaga.com/?shell#introduction)
+[Aquí](http://apidocs.datapaga.com/?shell#introduction)
 
 ### Implementación
 
