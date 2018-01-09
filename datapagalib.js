@@ -38,9 +38,9 @@ var datapagalib = {
         });
         return result;
     },
-    _get_account_movements: function(datas) {
+    _get_charge: function(datas) {
         var result;
-        result = _result(datas,'account_movements','none',0).then((result) => {
+        result = _result(datas,'charge','none',0).then((result) => {
            return result;
         });
         return result;
@@ -90,7 +90,7 @@ function _result(values,modul,uuid_card,page) {
         case 'history_transaction': 
             url = url_stagin + '/account_movements/transaction_history/';
         break;
-        case 'account_movements':
+        case 'charge':
              url = url_stagin + '/account_movements/charge';
         break;
         case 'card_list':
