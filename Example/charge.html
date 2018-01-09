@@ -68,25 +68,16 @@
             "card_security_code": "123" }
         }
 
-
         var valuedata;
         var uuid_card;
 
-        datapagalib._get_charge(JSON.stringify(params)).then((result)=>{
-
+        datapagalib.charge(JSON.stringify(params)).then((result)=>{
             var object = JSON.parse(result)
-           
-
-            var str = JSON.stringify(object, undefined, 4);   
-
-            var content = document.querySelector('#account_movement pre');
-             var data_content = "";
+            var str = JSON.stringify(object, undefined, 4);
+            var content = document.querySelector('#charge pre');
+            var data_content = "";
             data_content +=  JSON.stringify(object);
             content.append(str);
-
-           
-            
-
         });
     });
 </script>
@@ -99,7 +90,7 @@
                 <a class="nav-link active" href="index.html">Transactión history</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="account_movement.html">charge example</a>
+                <a class="nav-link" href="charge.html">charge example</a>
               </li>     
               <li class="nav-item">
                 <a class="nav-link" href="card_list.html">Card list</a>
@@ -123,7 +114,7 @@
             <div class="col-lg-12">
                   <div class="card-panel">
                     <h4 class="card-title">charge Response :</h4>
-                    <div id="account_movement">  
+                    <div id="charge">  
                     <pre>
 
                     </pre>      

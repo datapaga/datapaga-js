@@ -38,7 +38,7 @@ var datapagalib = {
         });
         return result;
     },
-    _get_charge: function(datas) {
+    charge: function(datas) {
         var result;
         result = _result(datas,'charge','none',0).then((result) => {
            return result;
