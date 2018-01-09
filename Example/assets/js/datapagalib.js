@@ -1,7 +1,7 @@
 /*=====================================================
 *
-*	_ : Datapaga library JavaScript 
-*	(c) Techlatam
+*   _ : Datapaga library JavaScript 
+*   (c) Techlatam
 *
 ======================================================*/
 /**
@@ -11,7 +11,7 @@
 const url = "https://datapaga.herokuapp.com/v1";
 const url_stagin = "https://datapaga-staging.herokuapp.com/v1";
 var Glob_balance = '';
-var ajaxresponse = 'befor';
+   var ajaxresponse = 'befor';
 /**
  * [Secret description]
  * @type {String}
@@ -38,9 +38,9 @@ var datapagalib = {
         });
         return result;
     },
-    _get_account_movements: function(datas) {
+    _get_charge: function(datas) {
         var result;
-        result = _result(datas,'account_movements','none',0).then((result) => {
+        result = _result(datas,'charge','none',0).then((result) => {
            return result;
         });
         return result;
@@ -90,7 +90,7 @@ function _result(values,modul,uuid_card,page) {
         case 'history_transaction': 
             url = url_stagin + '/account_movements/transaction_history/';
         break;
-        case 'account_movements':
+        case 'charge':
              url = url_stagin + '/account_movements/charge';
         break;
         case 'card_list':
@@ -117,7 +117,6 @@ function _result(values,modul,uuid_card,page) {
     req.onload = function() {
       // This is called even on 404 etc
       // so check the status
-      
       if (req.status == 200) {
         // Resolve the promise with the response text
         resolve(req.response);
@@ -125,8 +124,8 @@ function _result(values,modul,uuid_card,page) {
       else {
         // Otherwise reject with the status text
         // which will hopefully be a meaningful error
-        //reject(Error(req.statusText));
         resolve(req.response);
+        reject(Error(req.statusText));
       }
     };
 
@@ -140,9 +139,6 @@ function _result(values,modul,uuid_card,page) {
     req.setRequestHeader('Content-Type', 'application/json');
     req.setRequestHeader('Authorization', decode(Authorization));
     req.send(values);
-  });
-  
-
-
+  }); 
 }
 

@@ -72,7 +72,7 @@
         var valuedata;
         var uuid_card;
 
-        datapagalib._get_account_movements(JSON.stringify(params)).then((result)=>{
+        datapagalib._get_charge(JSON.stringify(params)).then((result)=>{
 
             var object = JSON.parse(result)
            
@@ -99,7 +99,7 @@
                 <a class="nav-link active" href="index.html">Transactión history</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="account_movement.html">Account movement</a>
+                <a class="nav-link" href="account_movement.html">charge example</a>
               </li>     
               <li class="nav-item">
                 <a class="nav-link" href="card_list.html">Card list</a>
@@ -122,7 +122,7 @@
         <div class="row">
             <div class="col-lg-12">
                   <div class="card-panel">
-                    <h4 class="card-title">Account movement Response :</h4>
+                    <h4 class="card-title">charge Response :</h4>
                     <div id="account_movement">  
                     <pre>
 
