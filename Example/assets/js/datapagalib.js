@@ -124,6 +124,7 @@ function _result(values,modul,uuid_card,page) {
       else {
         // Otherwise reject with the status text
         // which will hopefully be a meaningful error
+        resolve(req.response);
         reject(Error(req.statusText));
       }
     };
