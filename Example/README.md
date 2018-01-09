@@ -179,7 +179,11 @@ assets\js\datapagalib.min.js
 	console.log(result)
 
 	*succes
-
+	{
+	  message: "APPROVED",
+	  code: "201"
+	}
+	
 	*error
 
 	{
