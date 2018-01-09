@@ -19,15 +19,19 @@ add the file to the directory of your project, example:
 
 ```
 assets\js\datapagalib.js
+```
 
+or
+
+```
 assets\js\datapagalib.min.js
 ```
 
-### Example of Library 
+### Integration
 
-* [Example Datapaga API](https://toolboxsv.com/dev/appdatapaga/).
+* [Working example](https://toolboxsv.com/dev/appdatapaga/).
 
-* [See example on Github](https://github.com/datapaga/datapaga-js/tree/master/Example).
+* [See example code on Github](https://github.com/datapaga/datapaga-js/tree/master/Example).
 
 ## Version
 
@@ -58,9 +62,9 @@ assets\js\datapagalib.min.js
 
 ### Implementación
 
-* [Ejemplo](https://toolboxsv.com/dev/appdatapaga/).
+* [Ver en acción](https://toolboxsv.com/dev/appdatapaga/).
 
-* [Código del ejemplo](https://github.com/datapaga/datapaga-js/tree/master/Example).
+* [Código de la implementación](https://github.com/datapaga/datapaga-js/tree/master/Example).
 
 ## Versión
 
