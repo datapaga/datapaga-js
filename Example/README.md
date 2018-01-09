@@ -18,11 +18,13 @@ add the file to the directory of your project, example:
 
 ```
 assets\js\datapagalib.js
-
+```
+or
+```
 assets\js\datapagalib.min.js
 ```
 
-### Example of Library 
+### Working example
 
 * [ Library Implementation](https://toolboxsv.com/dev/appdatapaga/).
 
@@ -33,20 +35,20 @@ assets\js\datapagalib.min.js
  
 ### Instalación
  
- Agrega uno de los siguientes archivos de  la librería en el directorio de tu proyecto
- ```
- assets\js\datapagalib.js
- ```
+ Agrega uno de los siguientes archivos de  la librería en el directorio de tu proyecto.
+
+```
+assets\js\datapagalib.js
+```
  o
- ```
- assets\js\datapagalib.min.js
- ```
+```
+assets\js\datapagalib.min.js
+```
  
-### Example of Library 
+### En acción 
  
  * [Ejemplo de emplementación ](https://toolboxsv.com/dev/appdatapaga/).
  
-## How to use/Como usar
 
 ### Get list transaction.
 
@@ -79,7 +81,7 @@ assets\js\datapagalib.min.js
 ```
 	console.log(result)
 
-	*succes
+	*success
 
 	[
 	  {
@@ -122,7 +124,7 @@ assets\js\datapagalib.min.js
 ```
 	console.log(result)
 
-	*succes
+	*success
 
 	{
 	  "uuid": "cd_83e7ab7189bc3433f68b",
@@ -178,7 +180,7 @@ assets\js\datapagalib.min.js
 ```
 	console.log(result)
 
-	*succes
+	*success
 	{
 	  message: "APPROVED",
 	  code: "201"
@@ -223,7 +225,7 @@ assets\js\datapagalib.min.js
 ```
 	console.log(result)
 	
-	*succes
+	*success
 
 	{
 	  "response": [
@@ -281,7 +283,7 @@ assets\js\datapagalib.min.js
 ```
 	console.log(result)
 
-	*succes
+	*success
 
 	{
 	  "uuid": "cd_83e7ab7189bc3433f68b",
@@ -317,7 +319,7 @@ assets\js\datapagalib.min.js
 ```
 	console.log(result)
 
-	*succes
+	*success
 
 	{
 	  "uuid": "cd_83e7ab7189bc3433f68b",
