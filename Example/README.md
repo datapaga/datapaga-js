@@ -170,7 +170,7 @@ assets\js\datapagalib.min.js
 #### Function. 
 
 ```
-	datapagalib._charges(JSON.stringify(datas)).then((result)=>{ 
+	datapagalib.charge(JSON.stringify(datas)).then((result)=>{ 
 			// get result here
 	});
 
